@@ -11,3 +11,13 @@ class Animal:
         print(f"Nome: {self.nome}")
         print(f"Idade: {self.idade} anos")
         print(f"Espécie: {self.especie}")
+
+class Cachorro(Animal):
+    def emitir_som(self):
+        return "Au Au"
+
+# Exemplo de uso:
+meu_cachorro = Cachorro(nome="Rex", idade=3, especie="Cachorro")
+meu_cachorro.mostrar_informacoes()
+print("Som:", meu_cachorro.emitir_som())
+
